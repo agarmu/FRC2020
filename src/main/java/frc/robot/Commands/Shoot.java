@@ -6,15 +6,14 @@
 /*----------------------------------------------------------------------------*/
 
 package frc.robot.Commands;
+
+import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.Robot;
 import frc.robot.subsystems.*;
-import edu.wpi.first.wpilibj2.command.CommandBase;
 
 public class Shoot extends CommandBase {
   Intake i = new Intake();
-  /**
-   * Creates a new Shoot.
-   */
+  /** Creates a new Shoot. */
   public Shoot(Intake subsystem) {
     i = subsystem;
     addRequirements(i);
@@ -23,8 +22,7 @@ public class Shoot extends CommandBase {
 
   // Called when the command is initially scheduled.
   @Override
-  public void initialize() {
-  }
+  public void initialize() {}
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override
@@ -34,8 +32,7 @@ public class Shoot extends CommandBase {
 
   // Called once the command ends or is interrupted.
   @Override
-  public void end(boolean interrupted) {
-  }
+  public void end(boolean interrupted) {}
 
   // Returns true when the command should end.
   @Override

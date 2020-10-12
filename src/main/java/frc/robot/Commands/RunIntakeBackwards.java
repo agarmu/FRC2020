@@ -8,12 +8,12 @@
 package frc.robot.Commands;
 
 import edu.wpi.first.wpilibj2.command.CommandBase;
-import frc.robot.subsystems.*;
 import frc.robot.Robot;
+import frc.robot.subsystems.*;
 
 public class RunIntakeBackwards extends CommandBase {
 
-   private final Intake i;
+  private final Intake i;
 
   public RunIntakeBackwards(Intake subsystem) {
     i = subsystem;
@@ -22,13 +22,11 @@ public class RunIntakeBackwards extends CommandBase {
 
   // Called when the command is initially scheduled.
   @Override
-  public void initialize() {
-  }
+  public void initialize() {}
 
   // Called every time the scheduler runs while the command is scheduled.
   @Override
-  public void execute() {
-  }
+  public void execute() {}
 
   // Called once the command ends or is interrupted.
   @Override
